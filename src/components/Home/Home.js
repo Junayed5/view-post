@@ -1,11 +1,10 @@
 import React from 'react';
 import Posts from '../Posts/Posts';
-import Navbar from './Navbar';
+import Navbar from '../../layout/Navbar';
 
 const Home = () => {
     return (
         <div>
-            <Navbar/>
             <Posts/>
         </div>
     );

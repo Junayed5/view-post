@@ -9,7 +9,7 @@ const Post = ({ post }) => {
         <div className="card card-side bg-base-200 shadow-xl">
             <figure><img className='h-64 w-52' src={image} alt="image" /></figure>
             <div className="card-body">
-                <div className='flex gap-x-3'>
+                <div className='flex gap-x-3 ml-10'>
                     <div className="avatar">
                         <div className="w-11 h-fit rounded-full">
                             <img src={owner.picture} />

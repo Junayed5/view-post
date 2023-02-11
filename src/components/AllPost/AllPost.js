@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Post from './Post';
+import Post from '../Posts/Post';
 
-const Posts = () => {
+const AllPost = () => {
 
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch("https://dummyapi.io/data/v1/post?limit=6", {
+        fetch("https://dummyapi.io/data/v1/post", {
             headers: {
                 "app-id": "63e524af27722acebf48853c"
             }
@@ -18,19 +17,15 @@ const Posts = () => {
 
     return (
         <div>
-            <h3 className='text-center text-3xl text-cyan-800 font-bold my-7'>Posts</h3>
+            <h3 className='text-center text-3xl text-cyan-800 font-bold my-7'>All Posts</h3>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mx-6'>
                 {
                     posts.map(post => <Post key={post.id} post={post} />)
                 }
             </div>
-
-            <div className='flex justify-center'>
-                <Link to='/all-post' className="btn btn-accent my-10 w-40"> See All Post</Link>
-            </div>
         </div>
     );
 };
 
-export default Posts;
+export default AllPost;
