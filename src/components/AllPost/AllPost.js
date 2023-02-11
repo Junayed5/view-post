@@ -16,7 +16,7 @@ const AllPost = () => {
     }, [])
 
     return (
-        <div>
+        <div className='my-10'>
             <h3 className='text-center text-3xl text-cyan-800 font-bold my-7'>All Posts</h3>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mx-6'>

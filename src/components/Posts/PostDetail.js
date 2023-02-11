@@ -23,7 +23,7 @@ const PostDetail = () => {
     return (
         <div className='flex justify-center my-5'>
             <div className="card card-compact w-[500px] bg-base-100 shadow-xl">
-                <div className='flex gap-x-3'>
+                <div className='flex gap-x-3 ml-2'>
                     <div className="avatar">
                         <div className="w-11 h-fit rounded-full">
                             <img src={owner?.picture} />
@@ -34,7 +34,7 @@ const PostDetail = () => {
                         <p>{publishDate}</p>
                     </div>
                 </div>
-                <figure><img className='h-60 w-full' src={image} alt="image" /></figure>
+                <figure><img className='h-96 w-full' src={image} alt="image" /></figure>
 
                 <div className="card-body">
                     <div className='flex gap-x-3 mt-5'>

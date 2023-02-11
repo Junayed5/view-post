@@ -7,9 +7,9 @@ const Post = ({ post }) => {
 
     return (
         <div className="card card-side bg-base-200 shadow-xl">
-            <figure><img className='h-64 w-52' src={image} alt="image" /></figure>
+            <figure><img className='h-64 w-80 md:w-52 lg:w-52' src={image} alt="image" /></figure>
             <div className="card-body">
-                <div className='flex gap-x-3 ml-10'>
+                <div className='flex gap-x-3'>
                     <div className="avatar">
                         <div className="w-11 h-fit rounded-full">
                             <img src={owner.picture} />
@@ -31,7 +31,7 @@ const Post = ({ post }) => {
                         <img className='h-5 w-5' src="https://cdn-icons-png.flaticon.com/512/4102/4102964.png" alt="" />
                         <p className='-mt-1'>{likes}</p>
                     </div>
-                    <Link to={`/post/${id}`}><button className="btn btn-sm bg-sky-900 mt-3">View Detail</button></Link>
+                    <Link to={`/post/${id}`}><button className="btn btn-sm bg-sky-900 mt-3">Post Detail</button></Link>
                 </div>
             </div>
         </div>

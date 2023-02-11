@@ -27,7 +27,7 @@ const Posts = () => {
             </div>
 
             <div className='flex justify-center'>
-                <Link to='/all-post' className="btn btn-accent my-10 w-40"> See All Post</Link>
+                <Link to='/all-post' className="btn btn-accent text-white my-10 w-40"> See More</Link>
             </div>
         </div>
     );
